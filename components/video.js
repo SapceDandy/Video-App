@@ -10,7 +10,7 @@ const Video = (props) => {
     preLoad: true,
     onEnded: props.ended,
   }
-  return createElement("video", attrs)
+  return createElement("video" , attrs)
 }
 
 export default Video
