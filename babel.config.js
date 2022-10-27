@@ -1,8 +1,11 @@
 module.exports = function(api) {
   api.cache(true);
   return {
-    presets: ['babel-preset-expo'],
-    plugins: [["react-native", { commonjs: true }]
-    ],
+    // Only use this when running tests
+    env: {
+      test: {
+        presets: ['@expo/babel-preset-cli'],
+      },
+    },
   };
 };
