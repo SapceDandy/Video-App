@@ -2,18 +2,7 @@ module.exports = function(api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: [
-      [
-        require.resolve('babel-plugin-module-resolver'),
-        {
-          root: ["./src/"],
-          alias: {
-            "test": "./test"
-          }
-        }
-    
-      ],
-      ["react-native-web", { commonjs: true }]
+    plugins: [["react-native-web", { commonjs: true }]
     ],
   };
 };
