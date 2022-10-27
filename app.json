@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Video App",
-    "slug": "Video App",
+    "name": "VideoApp",
+    "slug": "VideoApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/favicon.png",
